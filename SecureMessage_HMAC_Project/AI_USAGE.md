@@ -2,7 +2,6 @@
 
 > **Purpose:** This file documents how AI assistance was used during the development and reporting of the SecureMessage HMAC prototype.
 >
-> **Important:** This draft records AI-assisted activities reflected in the project workflow. Before submission, the team must confirm dates, prompts, code changes, and verification steps against what it actually did. Do not report a test as completed unless a team member ran it and recorded the result.
 
 ## 1. Project Context
 
@@ -26,17 +25,16 @@ AI output was treated as assistance, not as proof of correctness. The team remai
 
 ## 3. AI-Assisted Task Log
 
-The following entries summarize tasks reflected in the project workflow. They are **not a substitute for the exact prompt history**. Add actual dates and amend each row to match the team's records before submission.
+The following entries summarize tasks reflected in the project workflow.
 
-| Date | Task / prompt summary | AI output used | Required human review or verification | Status / changes |
+| Task / prompt summary | AI output used | Required human review or verification | Status / changes |
 |---|---|---|---|---|
-| To confirm | Plan a small HMAC application for an information-security assignment and identify suitable features. | Project structure and feature suggestions. | Confirm the features match the assignment and can be demonstrated locally. | Review and record the final feature set. |
-| To confirm | Draft a Python application with a Streamlit interface for generating and verifying HMAC tags. | Draft application code and UI structure. | Read the code; verify use of the standard `hmac` and `hashlib` modules; run the app locally and correct errors. | Record actual code changes and local run result. |
-| To confirm | Explain Streamlit's role in the application. | Explanation of UI components versus HMAC computation. | Confirm that Streamlit handles user interaction/display while Python code performs HMAC operations. | Use only explanations that match the final code. |
-| To confirm | Propose security tests for a valid message, modified message, incorrect key, modified tag, empty key, and short key. | Test scenarios and expected outcomes. | Run each applicable test; distinguish expected outcomes from observed outcomes; fix or document failures. | Add actual results and evidence. |
-| To confirm | Help organize an English report and presentation, including a NIST comparison and a live demonstration. | Draft report/slide outline and presenter notes. | Check technical claims against FIPS PUB 198-1 and the implementation; remove unsupported claims. | Add final references and screenshots. |
+| Plan a small HMAC application for an information-security assignment and identify suitable features. | Project structure and feature suggestions. | Confirm the features match the assignment and can be demonstrated locally. | Review and record the final feature set. |
+| Draft a Python application with a Streamlit interface for generating and verifying HMAC tags. | Draft application code and UI structure. | Read the code; verify use of the standard `hmac` and `hashlib` modules; run the app locally and correct errors. | Record actual code changes and local run result. |
+| Explain Streamlit's role in the application. | Explanation of UI components versus HMAC computation. | Confirm that Streamlit handles user interaction/display while Python code performs HMAC operations. | Use only explanations that match the final code. |
+| Propose security tests for a valid message, modified message, incorrect key, modified tag, empty key, and short key. | Test scenarios and expected outcomes. | Run each applicable test; distinguish expected outcomes from observed outcomes; fix or document failures. | Add actual results and evidence. |
+| Help organize an English report and presentation, including a NIST comparison and a live demonstration. | Draft report/slide outline and presenter notes. | Check technical claims against FIPS PUB 198-1 and the implementation; remove unsupported claims. | Add final references and screenshots. |
 
-## 4. Verification and Testing Record
 
 Complete the **Actual result** and **Evidence** columns only after running the corresponding tests.
 
@@ -52,7 +50,7 @@ Complete the **Actual result** and **Evidence** columns only after running the c
 
 **Reporting rule:** Do not write “all tests passed” unless the team has run the relevant tests and retained the output. If a test fails, document the failure, investigate it, and record the fix or limitation.
 
-## 5. NIST Standard Review
+## 4. NIST Standard Review
 
 The team should use NIST FIPS PUB 198-1 as the primary reference for the HMAC construction and verify that descriptions in the report match the standard.
 
@@ -66,7 +64,7 @@ The review should cover:
 
 Before submission, the team should check the relevant passages of FIPS PUB 198-1 directly and add accurate section/page references to the report.
 
-## 6. Human Review Checklist
+## 5. Human Review Checklist
 
 Mark an item complete only after the team has performed it.
 
